@@ -30,6 +30,7 @@ export default function Home() {
         <meta property="og:title" content={CLINIC.fullName} />
         <meta property="og:description" content={CLINIC.tagline} />
         <meta property="og:type" content="website" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
