@@ -30,6 +30,12 @@ export default async function handler(req, res) {
     return res.status(400).json({ ok: false, error: "Invalid phone" });
   }
 
+  if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
+    // eslint-disable-next-line no-console
+    console.error("[lead] TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not configured");
+    return res.status(500).json({ ok: false, error: "Lead delivery not configured" });
+  }
+
   // Build the Telegram message (HTML).
   let text = `🧠 <b>Новая заявка с сайта mental-clinic.kz</b>\n\n`;
   text += `👤 <b>Имя:</b> ${esc(name)}\n`;
