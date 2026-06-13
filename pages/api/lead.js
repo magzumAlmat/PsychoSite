@@ -2,9 +2,10 @@
 // Mirrors the integration used on ZhandosMedSecondSite (Detoxlife):
 // Telegram sendMessage with HTML formatting, token/chat id from env with fallback.
 
-const TELEGRAM_BOT_TOKEN =
-  process.env.TELEGRAM_BOT_TOKEN || "8526465127:AAHVFydO0kZRccj1ivqkkwmYwphgnSSXVoA";
-const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || "-5005088725";
+// Secrets come from env only (.env.local locally, pm2/server env in production).
+// Never hardcode the bot token — the repo is shared.
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
 // Escape user input so it can't break Telegram HTML parse_mode.
 function esc(v) {

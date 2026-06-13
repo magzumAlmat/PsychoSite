@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Conditions from "@/components/Conditions";
 import Formats from "@/components/Formats";
 import Doctor from "@/components/Doctor";
+import Certificates from "@/components/Certificates";
 import Steps from "@/components/Steps";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
@@ -38,6 +39,7 @@ export default function Home() {
         <Conditions />
         <Formats />
         <Doctor />
+        <Certificates />
         <Steps />
         <Pricing />
         <Testimonials />
