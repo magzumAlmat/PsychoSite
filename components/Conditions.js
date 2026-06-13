@@ -10,6 +10,7 @@ import {
   Waves,
   Zap,
   AlertTriangle,
+  Shuffle,
 } from "lucide-react";
 import { CONDITIONS } from "@/lib/site";
 import { Container, Section, Eyebrow, stagger } from "@/components/ui/primitives";
@@ -25,6 +26,7 @@ const ICONS = {
   Waves,
   Zap,
   AlertTriangle,
+  Shuffle,
 };
 
 const cardVariants = {

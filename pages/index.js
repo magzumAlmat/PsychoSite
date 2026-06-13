@@ -30,8 +30,10 @@ export default function Home() {
         <meta property="og:title" content={CLINIC.fullName} />
         <meta property="og:description" content={CLINIC.tagline} />
         <meta property="og:type" content="website" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
 
       <Navbar />
