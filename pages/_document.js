@@ -28,6 +28,18 @@ gtag('config', 'G-608CDWWX98');`,
           }}
         />
 
+        {/* Google Ads conversion: клик по «Позвонить» (любая ссылка tel:).
+            Инлайн-слушатель в <head> — надёжнее React-эффекта (не зависит от гидрации/чанков). */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.addEventListener('click', function (e) {
+  var link = e.target.closest && e.target.closest('a[href^="tel:"]');
+  if (!link || typeof window.gtag !== 'function') return;
+  window.gtag('event', 'conversion', { send_to: 'AW-18236496763/WybVCPaWxb4cEPu26_dD' });
+});`,
+          }}
+        />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
