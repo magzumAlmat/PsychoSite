@@ -7,7 +7,7 @@ import { MotionConfig } from "framer-motion";
 // TODO: вставь сюда send_to из Google Ads:
 //   Цели → Конверсии → твоя конверсия → «Установить тег самостоятельно» →
 //   скопируй строку вида AW-18236496763/AbCdEf123 и замени плейсхолдер ниже.
-const CALL_CONVERSION_SEND_TO = "AW-18236496763/ВСТАВЬ_ЯРЛЫК";
+const CALL_CONVERSION_SEND_TO = "AW-18236496763/WybVCPaWxb4cEPu26_dD";
 
 export default function App({ Component, pageProps }) {
   // reducedMotion="user" → all framer-motion animations honor
