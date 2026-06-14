@@ -104,7 +104,7 @@ export default function Hero() {
               <ArrowRight size={18} aria-hidden className="transition-transform group-hover:translate-x-1" />
             </Button>
             <Button href="#quiz" variant="outline" size="lg">
-              Пройти анонимный тест
+              Пройти конфиденциальный тест
             </Button>
           </motion.div>
 

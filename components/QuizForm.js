@@ -119,7 +119,7 @@ export default function QuizForm() {
       <Container className="max-w-3xl">
         <div className="text-center">
           <Eyebrow>
-            <Sparkles size={16} aria-hidden /> Анонимный тест
+            <Sparkles size={16} aria-hidden /> Конфиденциальный тест
           </Eyebrow>
           <h2 className="mt-4 text-3xl font-bold text-foreground sm:text-4xl">
             Нужна ли помощь? Проверьте за 1 минуту
@@ -271,7 +271,7 @@ export default function QuizForm() {
                     Оставьте контакты — перезвоним в течение 15 минут
                   </h3>
                   <p className="mt-2 text-sm text-muted-foreground">
-                    Бесплатно и анонимно. Нажимая «Отправить», вы соглашаетесь
+                    Бесплатно и конфиденциально. Нажимая «Отправить», вы соглашаетесь
                     на обработку данных.
                   </p>
 

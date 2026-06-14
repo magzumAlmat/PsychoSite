@@ -81,7 +81,7 @@ export default function Contacts() {
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               Мы на связи круглосуточно. Первичная консультация бесплатна
-              и анонимна — поможем разобраться, что делать дальше.
+              и конфиденциальна — поможем разобраться, что делать дальше.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">

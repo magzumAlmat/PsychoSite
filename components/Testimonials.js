@@ -86,7 +86,7 @@ export default function Testimonials() {
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Реальные слова наших пациентов и их близких. Имена изменены —
-            мы бережём анонимность каждого.
+            мы бережём конфиденциальность каждого.
           </p>
         </motion.div>
 
