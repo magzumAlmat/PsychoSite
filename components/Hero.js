@@ -88,9 +88,8 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.35 }}
             className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground"
           >
-            {CLINIC.fullName}. Лечим депрессию, тревогу, психозы и тяжёлые
-            психические заболевания — деликатно и анонимно. Приём в клинике,
-            на дому и онлайн.
+            {CLINIC.fullName}. Помощь врача-психиатра и психотерапевта —
+            деликатно и конфиденциально. Приём в клинике, на дому и онлайн.
           </motion.p>
 
           <motion.div

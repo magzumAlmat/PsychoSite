@@ -44,7 +44,7 @@ export default function Conditions() {
       />
       <Container className="relative">
         <div className="max-w-2xl">
-          <Eyebrow>Заболевания, которые мы лечим</Eyebrow>
+          <Eyebrow>С чем мы помогаем</Eyebrow>
           <h2 className="mt-4 text-3xl font-bold text-foreground sm:text-4xl">
             Помощь при широком круге{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -52,8 +52,8 @@ export default function Conditions() {
             </span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            От тревоги и депрессии до тяжёлых заболеваний — деликатно,
-            конфиденциально и без осуждения. Лечение подбирается индивидуально.
+            Деликатно, конфиденциально и без осуждения. План помощи
+            подбирается индивидуально на консультации со специалистом.
           </p>
         </div>
 

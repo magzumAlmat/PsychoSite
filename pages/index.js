@@ -24,7 +24,7 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="Центр ментального здоровья mental-clinic: лечение депрессии, тревоги, шизофрении, деменции и других расстройств. Приём психиатра в клинике, на дому и анонимно. Консультация 24/7."
+          content="Центр ментального здоровья mental-clinic в Алматы: приём врача-психиатра и психотерапевта, консультация и сопровождение. В клинике, на дому и онлайн. Конфиденциально, 24/7."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content={CLINIC.fullName} />
