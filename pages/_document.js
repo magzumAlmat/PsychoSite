@@ -6,13 +6,13 @@ export default function Document() {
       <Head>
         {/* Google tag (gtag.js) — Google Ads */}
         {/* eslint-disable-next-line @next/next/next-script-for-ga */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18236496763" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18238841913" />
         <script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'AW-18236496763');`,
+gtag('config', 'AW-18238841913');`,
           }}
         />
 
@@ -35,7 +35,11 @@ gtag('config', 'G-608CDWWX98');`,
             __html: `document.addEventListener('click', function (e) {
   var link = e.target.closest && e.target.closest('a[href^="tel:"]');
   if (!link || typeof window.gtag !== 'function') return;
-  window.gtag('event', 'conversion', { send_to: 'AW-18236496763/WybVCPaWxb4cEPu26_dD' });
+  // TODO: вставь ярлык конверсии из НОВОГО аккаунта AW-18238841913
+  // (Цели -> Конверсии -> действие -> "Посмотреть тег события" -> send_to).
+  var SEND_TO = 'AW-18238841913/ВСТАВЬ_ЯРЛЫК';
+  if (SEND_TO.indexOf('ВСТАВЬ_ЯРЛЫК') !== -1) return; // не шлём, пока нет реального ярлыка
+  window.gtag('event', 'conversion', { send_to: SEND_TO });
 });`,
           }}
         />
