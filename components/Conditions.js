@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   Brain,
@@ -11,9 +12,11 @@ import {
   Zap,
   AlertTriangle,
   Shuffle,
+  MessageCircle,
 } from "lucide-react";
 import { CONDITIONS } from "@/lib/site";
-import { Container, Section, Eyebrow, stagger } from "@/components/ui/primitives";
+import { Container, Section, Eyebrow, Button, stagger } from "@/components/ui/primitives";
+import ConsultModal from "@/components/ConsultModal";
 
 const ICONS = {
   Brain,
@@ -35,6 +38,8 @@ const cardVariants = {
 };
 
 export default function Conditions() {
+  const [consult, setConsult] = useState(null);
+
   return (
     <Section id="conditions" className="relative overflow-hidden">
       <div
@@ -84,6 +89,15 @@ export default function Conditions() {
                 <p className="relative mt-2 text-[15px] leading-relaxed text-muted-foreground">
                   {c.text}
                 </p>
+                <Button
+                  as="button"
+                  type="button"
+                  variant="outline"
+                  className="relative mt-5 w-full"
+                  onClick={() => setConsult(c.title)}
+                >
+                  <MessageCircle size={16} aria-hidden /> Проконсультироваться
+                </Button>
               </motion.article>
             );
           })}
@@ -93,6 +107,12 @@ export default function Conditions() {
           Не нашли своё состояние? Позвоните — поможем разобраться и подскажем,
           что делать дальше.
         </p>
+
+        <ConsultModal
+          open={!!consult}
+          onClose={() => setConsult(null)}
+          context={consult || ""}
+        />
       </Container>
     </Section>
   );
