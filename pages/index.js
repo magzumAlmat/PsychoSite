@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 import Conditions from "@/components/Conditions";
 import Formats from "@/components/Formats";
 // import Doctor from "@/components/Doctor"; // модуль «Ваш врач» временно отключён
-import Certificates from "@/components/Certificates";
+// import Certificates from "@/components/Certificates"; // модуль «Документы» временно отключён
 import Steps from "@/components/Steps";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
@@ -101,7 +101,7 @@ export default function Home() {
         <Conditions />
         <Formats />
         {/* <Doctor /> — модуль «Ваш врач» временно отключён */}
-        <Certificates />
+        {/* <Certificates /> — модуль «Документы» временно отключён */}
         <Steps />
         <Pricing />
         <Testimonials />
