@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Conditions from "@/components/Conditions";
 import Formats from "@/components/Formats";
-import Doctor from "@/components/Doctor";
+// import Doctor from "@/components/Doctor"; // модуль «Ваш врач» временно отключён
 import Certificates from "@/components/Certificates";
 import Steps from "@/components/Steps";
 import Pricing from "@/components/Pricing";
@@ -100,7 +100,7 @@ export default function Home() {
         <Hero />
         <Conditions />
         <Formats />
-        <Doctor />
+        {/* <Doctor /> — модуль «Ваш врач» временно отключён */}
         <Certificates />
         <Steps />
         <Pricing />
